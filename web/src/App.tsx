@@ -1,9 +1,12 @@
 import { useMemo, useState } from "react"
 import rawData from "../../players.json"
 import Avatar from "./Avatar"
+import Game from "./Game"
 import type { Player, PlayersFile, Region, Role } from "./types"
 
 const data = rawData as PlayersFile
+
+type Mode = "roster" | "game"
 
 const REGIONS: (Region | "All")[] = ["All", "Americas", "EMEA", "Pacific", "CN"]
 const ROLES: (Role | "All")[] = ["All", "Duelist", "Controller", "Sentinel", "Initiator"]
@@ -116,37 +119,72 @@ function PlayerCard({ p }: { p: Player }) {
 }
 
 export default function App() {
+  const [mode, setMode] = useState<Mode>("roster")
   const [region, setRegion] = useState<(typeof REGIONS)[number]>("All")
   const [role, setRole] = useState<(typeof ROLES)[number]>("All")
   const [search, setSearch] = useState("")
   const [pastTeam, setPastTeam] = useState("")
 
+  // All hooks must run on every render — keep useMemo BEFORE any early return
+  // (otherwise React errors with "Rendered fewer hooks than expected").
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
     const pt = pastTeam.trim().toLowerCase()
-    return data.players.filter((p) => {
-      if (region !== "All" && p.region !== region) return false
-      if (role !== "All" && p.primary_role !== role) return false
-      if (q && !p.name.toLowerCase().includes(q) && !p.real_name.toLowerCase().includes(q))
-        return false
-      if (pt) {
-        const inCurrent = p.team.toLowerCase().includes(pt)
-        const inPast = p.past_teams.some((t) => t.name.toLowerCase().includes(pt))
-        if (!inCurrent && !inPast) return false
-      }
-      return true
-    })
+    return data.players
+      .filter((p) => {
+        if (region !== "All" && p.region !== region) return false
+        if (role !== "All" && p.primary_role !== role) return false
+        if (q && !p.name.toLowerCase().includes(q) && !p.real_name.toLowerCase().includes(q))
+          return false
+        if (pt) {
+          const inCurrent = p.team.toLowerCase().includes(pt)
+          const inPast = p.past_teams.some((t) => t.name.toLowerCase().includes(pt))
+          if (!inCurrent && !inPast) return false
+        }
+        return true
+      })
+      .sort((a, b) => {
+        // Players with real photos first; tie-break by name.
+        if (a.has_real_avatar !== b.has_real_avatar) {
+          return a.has_real_avatar ? -1 : 1
+        }
+        return a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+      })
   }, [region, role, search, pastTeam])
+
+  if (mode === "game") {
+    return (
+      <div className="min-h-screen bg-gray-50 text-gray-900">
+        <header className="border-b border-gray-200 bg-white">
+          <div className="mx-auto max-w-3xl px-6 py-6">
+            <h1 className="text-2xl font-bold">VCT Player Guesser — Game</h1>
+            <p className="text-sm text-gray-500 mt-1">
+              Think of a VCT pro. Answer 20 questions and I'll try to guess.
+            </p>
+          </div>
+        </header>
+        <Game players={data.players} onExit={() => setMode("roster")} />
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <header className="border-b border-gray-200 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-6">
-          <h1 className="text-2xl font-bold">VCT Player Guesser — Roster</h1>
-          <p className="text-sm text-gray-500 mt-1">
-            {data.meta.count} players · {data.meta.version} ·
-            generated {new Date(data.meta.generated_at).toLocaleDateString()}
-          </p>
+        <div className="mx-auto max-w-6xl px-6 py-6 flex items-start justify-between gap-6">
+          <div>
+            <h1 className="text-2xl font-bold">VCT Player Guesser — Roster</h1>
+            <p className="text-sm text-gray-500 mt-1">
+              {data.meta.count} players · {data.meta.version} ·
+              generated {new Date(data.meta.generated_at).toLocaleDateString()}
+            </p>
+          </div>
+          <button
+            onClick={() => setMode("game")}
+            className="rounded bg-gray-900 text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 shrink-0"
+          >
+            ▶ Start guessing game
+          </button>
         </div>
       </header>
 
