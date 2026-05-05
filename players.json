@@ -1,0 +1,4508 @@
+[
+  {
+    "id": "58290",
+    "name": "77even",
+    "real_name": "Richard Venskevychius",
+    "country": "lt",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "WIP Esports",
+    "team_logo": "https://owcdn.net/img/695c9c861fe80.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "neon",
+      "waylay"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "19530",
+    "name": "AAAAY",
+    "real_name": "Zhang Yang (张杨)",
+    "country": "cn",
+    "avatar": "https://owcdn.net/img/6780cc68aef3a.png",
+    "team": "FunPlus Phoenix",
+    "team_logo": "https://owcdn.net/img/65a17b313b131.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "skye",
+      "gekko",
+      "fade"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "43064",
+    "name": "Aace",
+    "real_name": "Souta Itou",
+    "country": "jp",
+    "avatar": "https://owcdn.net/img/69722581d2be1.png",
+    "team": "FENNEL",
+    "team_logo": "https://owcdn.net/img/60d3986152cd4.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "omen",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "38025",
+    "name": "Addi",
+    "real_name": "",
+    "country": "gb",
+    "avatar": "https://owcdn.net/img/695fd6fc84b6f.png",
+    "team": "FOKUS Sakura",
+    "team_logo": "https://owcdn.net/img/65bd337798814.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "neon",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "47467",
+    "name": "Ady",
+    "real_name": "",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Insomnia",
+    "team_logo": "https://owcdn.net/img/62e4c81144c03.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "43744",
+    "name": "Akita",
+    "real_name": "Esllene Xu",
+    "country": "fr",
+    "avatar": "https://owcdn.net/img/699eaed10284b.png",
+    "team": "G2 Gozen",
+    "team_logo": "https://owcdn.net/img/633822848a741.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "1120",
+    "name": "ALEKSANDAR",
+    "real_name": "Aleksandar Hinojosa",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Alliance Guardians",
+    "team_logo": "https://owcdn.net/img/698d499d024ef.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "reyna"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "9810",
+    "name": "Alfajer",
+    "real_name": "Emir Ali Beder",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/687e2c40ac175.png",
+    "team": "FNATIC",
+    "team_logo": "https://owcdn.net/img/62a40cc2b5e29.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "killjoy",
+      "raze",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "1374",
+    "name": "ALIVE",
+    "real_name": "Gilad Hakim",
+    "country": "il",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "BRATAN MIX",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "35018",
+    "name": "allie",
+    "real_name": "",
+    "country": "br",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Evil Geniuses GC",
+    "team_logo": "https://owcdn.net/img/667462f046618.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "breach",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "42638",
+    "name": "Amcar",
+    "real_name": "",
+    "country": "de",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "ALTERNATE aTTaX",
+    "team_logo": "https://owcdn.net/img/62a1d1c3e765e.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "viper",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "26077",
+    "name": "Angela",
+    "real_name": "Angela Petrovic",
+    "country": "th",
+    "avatar": "https://owcdn.net/img/6477230200f0e.png",
+    "team": "IVY",
+    "team_logo": "https://owcdn.net/img/69c74665562fb.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "kayo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "52180",
+    "name": "Annie",
+    "real_name": "Surassawadee Khongpechdee",
+    "country": "th",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "IVY",
+    "team_logo": "https://owcdn.net/img/69c74665562fb.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "raze",
+      "waylay"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "14310",
+    "name": "aNNja",
+    "real_name": "Anja Vasalic",
+    "country": "rs",
+    "avatar": "https://owcdn.net/img/639a9f36dc7f9.png",
+    "team": "OUTCASTS",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "sage",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "2252",
+    "name": "Anq",
+    "real_name": "Ilya Matyash",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/686ce260cfbca.png",
+    "team": "S8UL Esports",
+    "team_logo": "https://owcdn.net/img/67becb3c72954.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "15897",
+    "name": "Apinya",
+    "real_name": "Apinya Laotaew",
+    "country": "th",
+    "avatar": "https://owcdn.net/img/698dc4c753dfa.png",
+    "team": "Sharper Esports",
+    "team_logo": "https://owcdn.net/img/698dc40a29cda.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "astra",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "11495",
+    "name": "archiw0w",
+    "real_name": "Damir Tenchurin",
+    "country": "un",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Bitfix Gaming",
+    "team_logo": "https://owcdn.net/img/642c76a94a808.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "skye",
+      "jett",
+      "sage"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "42651",
+    "name": "avey",
+    "real_name": "",
+    "country": "lv",
+    "avatar": "https://owcdn.net/img/6864953e67fd0.png",
+    "team": "MANIA Esports",
+    "team_logo": "https://owcdn.net/img/68f648ab8039d.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "30123",
+    "name": "bakkushaw",
+    "real_name": "",
+    "country": "lt",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Anorthosis Famagusta Esports Female",
+    "team_logo": "https://owcdn.net/img/620de04c92064.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "breach",
+      "tejo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "47911",
+    "name": "berryx",
+    "real_name": "Emine Çoban",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/69794b60043d9.png",
+    "team": "Gentle Mates GC",
+    "team_logo": "https://owcdn.net/img/6670153fa9120.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "yoru",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "26102",
+    "name": "bethany",
+    "real_name": "Bethany Davie",
+    "country": "au",
+    "avatar": "https://owcdn.net/img/68ef3ac4e1fee.png",
+    "team": "swaglord9000",
+    "team_logo": "https://owcdn.net/img/66c3c4cdc06d6.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "sova",
+      "breach"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "12143",
+    "name": "Bizerra",
+    "real_name": "Vitoria Vieira",
+    "country": "br",
+    "avatar": "https://owcdn.net/img/64069bcef1406.png",
+    "team": "Team Liquid Brazil",
+    "team_logo": "https://owcdn.net/img/640c381f0603f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "killjoy",
+      "kayo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "438",
+    "name": "Boaster",
+    "real_name": "Jake Howlett",
+    "country": "gb",
+    "avatar": "https://owcdn.net/img/687e2c495dcc6.png",
+    "team": "FNATIC",
+    "team_logo": "https://owcdn.net/img/62a40cc2b5e29.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "brimstone"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "24553",
+    "name": "Boni",
+    "real_name": "",
+    "country": "ph",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "M80",
+    "team_logo": "https://owcdn.net/img/6945c73504452.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "raze",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "36747",
+    "name": "Bonobo",
+    "real_name": "Jason Jia",
+    "country": "au",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "BaosLittleBuns",
+    "team_logo": "https://owcdn.net/img/6997315127f0f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "cypher",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4807",
+    "name": "bstrdd",
+    "real_name": "Paula Naguil",
+    "country": "cl",
+    "avatar": "https://owcdn.net/img/6977fa15e7dbe.png",
+    "team": "MIBR GC",
+    "team_logo": "https://owcdn.net/img/632be7626d6d9.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "32050",
+    "name": "c0n",
+    "real_name": "Connor Augustine",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Wanted Goons",
+    "team_logo": "https://owcdn.net/img/6934a025b897d.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "viper",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "56063",
+    "name": "cakeo",
+    "real_name": "",
+    "country": "vn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Da Nang GrandStand",
+    "team_logo": "https://owcdn.net/img/69e5bd1cb4870.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "tejo",
+      "waylay"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "31855",
+    "name": "Celasun",
+    "real_name": "Emir Celasun",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/66b0bcfa1d13e.png",
+    "team": "GHOSTS",
+    "team_logo": "https://owcdn.net/img/68db9fa23c56b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "killjoy",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "15559",
+    "name": "CHICHOO",
+    "real_name": "Wan Shunzhi (万顺治)",
+    "country": "cn",
+    "avatar": "https://owcdn.net/img/677fe4289bb34.png",
+    "team": "EDward Gaming",
+    "team_logo": "https://owcdn.net/img/62c82049253b2.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "killjoy",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "458",
+    "name": "Chronicle",
+    "real_name": "Timofey Khromov",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/6977a6d8e354a.png",
+    "team": "Team Vitality",
+    "team_logo": "https://owcdn.net/img/6466d79e1ed40.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "viper",
+      "breach"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "2099",
+    "name": "cLeVerLy",
+    "real_name": "Dejan Lazaridis",
+    "country": "de",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "MAJTKOMAT",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "killjoy",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "573",
+    "name": "cNed",
+    "real_name": "Mehmet Yağız İpek",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/696fd4808fcf3.png",
+    "team": "PCIFIC Esports",
+    "team_logo": "https://owcdn.net/img/656e2ae2b8a48.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "11259",
+    "name": "conir",
+    "real_name": "Constanza Reyes",
+    "country": "cl",
+    "avatar": "https://owcdn.net/img/6977f9db66dbc.png",
+    "team": "MIBR GC",
+    "team_logo": "https://owcdn.net/img/632be7626d6d9.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "brimstone",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "33994",
+    "name": "Creamydreamy",
+    "real_name": "",
+    "country": "se",
+    "avatar": "https://owcdn.net/img/679eacd1310b6.png",
+    "team": "DNSTY",
+    "team_logo": "https://owcdn.net/img/677c92a911f07.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "kayo",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "6437",
+    "name": "Dark3st",
+    "real_name": "",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "YFP",
+    "team_logo": "https://owcdn.net/img/677826ad11d3b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "kayo",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "52085",
+    "name": "darky",
+    "real_name": "",
+    "country": "ph",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "NU BULLDOGS",
+    "team_logo": "https://owcdn.net/img/698a1bda44974.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "fade",
+      "sova",
+      "tejo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "10885",
+    "name": "DaviH",
+    "real_name": "David Cruz",
+    "country": "pt",
+    "avatar": "https://owcdn.net/img/69a8be6cb643d.png",
+    "team": "CGN Esports",
+    "team_logo": "https://owcdn.net/img/60defafec983c.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "40889",
+    "name": "decoy",
+    "real_name": "",
+    "country": "mn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Trinity",
+    "team_logo": "https://owcdn.net/img/698c77f5ed4d3.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "waylay",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "9152",
+    "name": "Deryeon",
+    "real_name": "Derrick Yee",
+    "country": "sg",
+    "avatar": "https://owcdn.net/img/69d5fa9c535ea.png",
+    "team": "Motiv Esports",
+    "team_logo": "https://owcdn.net/img/67e27ccb492e8.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "chamber",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "27789",
+    "name": "deyten",
+    "real_name": "Elmas Dzudzevic",
+    "country": "de",
+    "avatar": "https://owcdn.net/img/69eb5f590db0b.png",
+    "team": "RIZON",
+    "team_logo": "https://owcdn.net/img/657eca10317fb.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "killjoy",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "796",
+    "name": "eeiu",
+    "real_name": "Daniel Vucenovic",
+    "country": "ca",
+    "avatar": "https://owcdn.net/img/6984ecacc0ffe.png",
+    "team": "FURIA",
+    "team_logo": "https://owcdn.net/img/632be843b7d51.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "breach"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "41694",
+    "name": "endoist",
+    "real_name": "",
+    "country": "th",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "555",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "49608",
+    "name": "enzo",
+    "real_name": "",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Dynamo",
+    "team_logo": "https://owcdn.net/img/688474d4cebab.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "clove",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "40986",
+    "name": "Euii",
+    "real_name": "",
+    "country": "un",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "OUTSIDERS",
+    "team_logo": "https://owcdn.net/img/6594cea705cc6.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "viper",
+      "vyse"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "30556",
+    "name": "exa",
+    "real_name": "Kim Lee-hwan (김이환)",
+    "country": "kr",
+    "avatar": "https://owcdn.net/img/67a4c0b5a9704.png",
+    "team": "Shopify Rebellion Black",
+    "team_logo": "https://owcdn.net/img/679314c8ac387.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "viper",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "30743",
+    "name": "Fair",
+    "real_name": "",
+    "country": "eg",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Winthrop University",
+    "team_logo": "https://owcdn.net/img/636c2f2592313.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "neon",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "41720",
+    "name": "Favian",
+    "real_name": "Enes Yiğiter",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/69e226459b5e0.png",
+    "team": "Eternal Fire",
+    "team_logo": "https://owcdn.net/img/6628980dcdaea.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "raze",
+      "kayo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "12593",
+    "name": "Felix",
+    "real_name": "Felix Gerling",
+    "country": "de",
+    "avatar": "https://owcdn.net/img/6895d1972ffd6.png",
+    "team": "Eintracht FrankfurtJune 2025 – December 2025",
+    "team_logo": "https://owcdn.net/img/659d1013d5cf5.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "viper",
+      "fade"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "10053",
+    "name": "FireBallOps",
+    "real_name": "Cameron Tomaselli",
+    "country": "us",
+    "avatar": "https://owcdn.net/img/630aea53bcd96.png",
+    "team": "Nightblood Gaming",
+    "team_logo": "https://owcdn.net/img/61f13e1258cab.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "killjoy",
+      "cypher",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "7660",
+    "name": "Fizzy",
+    "real_name": "David Figueiredo",
+    "country": "pt",
+    "avatar": "https://owcdn.net/img/6798ea17775ec.png",
+    "team": "Eintracht Frankfurt",
+    "team_logo": "https://owcdn.net/img/659d1013d5cf5.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "killjoy",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "51100",
+    "name": "Flicker",
+    "real_name": "Kim Tae-hee (김태희)",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "CREST GAMING Zst",
+    "team_logo": "https://owcdn.net/img/63a33a790ae62.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "yoru",
+      "tejo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "47482",
+    "name": "flora",
+    "real_name": "",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Insomnia",
+    "team_logo": "https://owcdn.net/img/62e4c81144c03.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "neon",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "651",
+    "name": "frz",
+    "real_name": "Leandro Gomes",
+    "country": "br",
+    "avatar": "https://owcdn.net/img/697a76da98484.png",
+    "team": "2Game Esports",
+    "team_logo": "https://owcdn.net/img/67725c368d524.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "killjoy",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "50869",
+    "name": "fudgestars",
+    "real_name": "",
+    "country": "gb",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Habos Babos",
+    "team_logo": "https://owcdn.net/img/69e58a0e2338e.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "yoru",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "40218",
+    "name": "FuRy",
+    "real_name": "",
+    "country": "sa",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Team Spire",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "sova",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "40004",
+    "name": "globeX",
+    "real_name": "Michail Kostylew",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/6972163a75513.png",
+    "team": "Barça eSports",
+    "team_logo": "https://owcdn.net/img/65843488833d1.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "neon",
+      "waylay"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "50813",
+    "name": "GSR",
+    "real_name": "",
+    "country": "rs",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Team Liquid Academy",
+    "team_logo": "https://owcdn.net/img/640c381f0603f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "kayo",
+      "breach"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "1524",
+    "name": "H1ber",
+    "real_name": "Joona Parviainen",
+    "country": "fi",
+    "avatar": "https://owcdn.net/img/63b7a4264bfc0.png",
+    "team": "WIP Esports",
+    "team_logo": "https://owcdn.net/img/695c9c861fe80.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "sova"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "54222",
+    "name": "haby",
+    "real_name": "",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Meikai Dolls",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "killjoy",
+      "tejo",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "37927",
+    "name": "happywei",
+    "real_name": "Deng Minwei (邓闵维)",
+    "country": "tw",
+    "avatar": "https://owcdn.net/img/6782528e85d4c.png",
+    "team": "Xi Lai Gaming",
+    "team_logo": "https://owcdn.net/img/671742f863b9b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "viper",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "24428",
+    "name": "harambe",
+    "real_name": "",
+    "country": "lv",
+    "avatar": "https://owcdn.net/img/65605f89b1f52.png",
+    "team": "Ruddy",
+    "team_logo": "https://owcdn.net/img/655489ebb0e1a.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "55694",
+    "name": "hezacoil",
+    "real_name": "Berkay Doğar",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/69bea0e7ea395.png",
+    "team": "REBORN",
+    "team_logo": "https://owcdn.net/img/69d70973a1882.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "astra",
+      "viper",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "64127",
+    "name": "hippo",
+    "real_name": "",
+    "country": "vn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Sushifly",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "fade",
+      "omen",
+      "miks"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "44960",
+    "name": "HoangBao2",
+    "real_name": "",
+    "country": "un",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "BaosLittleBuns",
+    "team_logo": "https://owcdn.net/img/6997315127f0f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "brimstone",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "2860",
+    "name": "Horcus",
+    "real_name": "Salvador Matas Salas",
+    "country": "es",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Team Spain",
+    "team_logo": "https://owcdn.net/img/5a380a0393200.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "breach"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "12545",
+    "name": "HyS",
+    "real_name": "",
+    "country": "ee",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Auristralis",
+    "team_logo": "https://owcdn.net/img/62c0da7e37173.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "chamber",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "63364",
+    "name": "Imvietnamesegirl",
+    "real_name": "",
+    "country": "vn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "36 Thieves",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "phoenix",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4207",
+    "name": "Indra",
+    "real_name": "Daniil Sergeev",
+    "country": "ru",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "The Last Monarch",
+    "team_logo": "https://owcdn.net/img/6453c41231e22.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "raze",
+      "kayo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "9063",
+    "name": "infiltrator",
+    "real_name": "Philip Nguyen",
+    "country": "vn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Winthrop University",
+    "team_logo": "https://owcdn.net/img/636c2f2592313.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "44842",
+    "name": "Jackk",
+    "real_name": "Jack Foote",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Cloud9",
+    "team_logo": "https://owcdn.net/img/628addcbd509e.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "fade",
+      "sova",
+      "tejo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "41207",
+    "name": "Jade",
+    "real_name": "",
+    "country": "de",
+    "avatar": "https://owcdn.net/img/68fe0420ddd50.png",
+    "team": "ALTERNATE aTTaX Ruby",
+    "team_logo": "https://owcdn.net/img/62a1d1c3e765e.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "yoru",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "19527",
+    "name": "jamter",
+    "real_name": "Valeriy Kuskov",
+    "country": "ru",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Lost Puppies",
+    "team_logo": "https://owcdn.net/img/66343eabd85d6.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "17332",
+    "name": "jduh",
+    "real_name": "Ceyda Kondu",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/65a420d325fa8.png",
+    "team": "GIANTX GC",
+    "team_logo": "https://owcdn.net/img/657b2f3fcd199.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "sova"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "21435",
+    "name": "Jelly",
+    "real_name": "Julia Iris",
+    "country": "br",
+    "avatar": "https://owcdn.net/img/6930b6d537b3d.png",
+    "team": "Team Liquid Brazil",
+    "team_logo": "https://owcdn.net/img/640c381f0603f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "kayo",
+      "raze",
+      "gekko"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "24895",
+    "name": "Jemkin",
+    "real_name": "Maksim Batorov",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/6821f75962425.png",
+    "team": "Rex Regum Qeon",
+    "team_logo": "https://owcdn.net/img/629f17f51e7a3.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "2653",
+    "name": "Jesse",
+    "real_name": "Adam Čtvrtníček",
+    "country": "cz",
+    "avatar": "https://owcdn.net/img/67e8879ace2a8.png",
+    "team": "UCAM Esports Club",
+    "team_logo": "https://owcdn.net/img/5f7f77ef1e2f0.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "sova",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "51378",
+    "name": "Jid",
+    "real_name": "",
+    "country": "un",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "FOCU5 esports",
+    "team_logo": "https://owcdn.net/img/6808e1d733cc5.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "vyse",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "7378",
+    "name": "Jinggg",
+    "real_name": "Wang Jing Jie",
+    "country": "sg",
+    "avatar": "https://owcdn.net/img/69735f0889a6b.png",
+    "team": "Paper Rex",
+    "team_logo": "https://owcdn.net/img/62bbeba74d5cb.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "reyna",
+      "sage"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "59287",
+    "name": "jinwoo",
+    "real_name": "",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Pink Piggies",
+    "team_logo": "https://owcdn.net/img/69919e6877178.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "waylay",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "26632",
+    "name": "Joliinaa",
+    "real_name": "Tina Agélii",
+    "country": "se",
+    "avatar": "https://owcdn.net/img/6832ece97be49.png",
+    "team": "SK Nebula",
+    "team_logo": "https://owcdn.net/img/659ecda9c6382.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "jett",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "920",
+    "name": "jON4Y",
+    "real_name": "João Coelho",
+    "country": "pt",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "ehehxd",
+    "team_logo": "https://owcdn.net/img/650bfd70e1fac.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "brimstone",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "21619",
+    "name": "JUGi",
+    "real_name": "Jakob Hansen",
+    "country": "dk",
+    "avatar": "https://owcdn.net/img/623be82284075.png",
+    "team": "FOKUSFebruary 2022 – October 2023",
+    "team_logo": "https://owcdn.net/img/627934cd0b505.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "neon",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "49738",
+    "name": "JuicyOskar",
+    "real_name": "",
+    "country": "no",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "5STARS Esport",
+    "team_logo": "https://owcdn.net/img/680fd590415a6.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "raze",
+      "tejo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "48042",
+    "name": "junnn",
+    "real_name": "",
+    "country": "un",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "ORA Esports",
+    "team_logo": "https://owcdn.net/img/6978169d8d2df.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "clove",
+      "omen",
+      "brimstone"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "9554",
+    "name": "kaajak",
+    "real_name": "Kajetan Haremski",
+    "country": "pl",
+    "avatar": "https://owcdn.net/img/687e2c5192fe5.png",
+    "team": "FNATIC",
+    "team_logo": "https://owcdn.net/img/62a40cc2b5e29.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "yoru",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "58496",
+    "name": "Kachoww",
+    "real_name": "Samet Arıcı",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/69bea0ef6d14c.png",
+    "team": "REBORN",
+    "team_logo": "https://owcdn.net/img/69d70973a1882.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "omen",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "30286",
+    "name": "karam1l",
+    "real_name": "Norbu Tsering",
+    "country": "in",
+    "avatar": "https://owcdn.net/img/69ca8f7db4b71.png",
+    "team": "Asterisk",
+    "team_logo": "https://owcdn.net/img/66ed612a08e34.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "killjoy",
+      "cypher",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "56679",
+    "name": "Kassielsy",
+    "real_name": "",
+    "country": "tw",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "XLB",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "waylay",
+      "killjoy",
+      "clove"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "45962",
+    "name": "KEN",
+    "real_name": "",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "CREST GAMING Zst",
+    "team_logo": "https://owcdn.net/img/63a33a790ae62.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "212",
+    "name": "Khegasi",
+    "real_name": "Adam Benaouadi",
+    "country": "fr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Project SW",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "phoenix",
+      "sova"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "48431",
+    "name": "Kippei",
+    "real_name": "",
+    "country": "jp",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "QT DIG∞",
+    "team_logo": "https://owcdn.net/img/67f4e2e7b3802.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "clove"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "14208",
+    "name": "Kishi",
+    "real_name": "Ngô Trường Huy",
+    "country": "vn",
+    "avatar": "https://owcdn.net/img/69dc2c52e99f9.png",
+    "team": "Goblin Gang",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "raze",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "16028",
+    "name": "Klamran",
+    "real_name": "Kamran Hamid",
+    "country": "ca",
+    "avatar": "https://owcdn.net/img/630569ec04c6b.png",
+    "team": "rayquaza",
+    "team_logo": "https://owcdn.net/img/695acaaf8bf01.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "omen",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4774",
+    "name": "Knight",
+    "real_name": "Liu Yuxiang (刘宇翔)",
+    "country": "cn",
+    "avatar": "https://owcdn.net/img/677fdffe244c5.png",
+    "team": "Bilibili Gaming",
+    "team_logo": "https://owcdn.net/img/63f25d72216c1.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "sova",
+      "sage"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "25388",
+    "name": "Kon",
+    "real_name": "Loraine Pagente",
+    "country": "ph",
+    "avatar": "https://owcdn.net/img/67a822689773c.png",
+    "team": "Stallions Lyra",
+    "team_logo": "https://owcdn.net/img/68366aa3c10fd.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "deadlock",
+      "fade"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "55681",
+    "name": "kozzy",
+    "real_name": "Denis Stefan Aionitoaei",
+    "country": "ro",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Enterprise Esports",
+    "team_logo": "https://owcdn.net/img/68643d0b1c72b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "waylay",
+      "neon",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4583",
+    "name": "kuL",
+    "real_name": "Sandis Stikuts",
+    "country": "lv",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "",
+    "team_logo": "",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "59642",
+    "name": "Kuroo",
+    "real_name": "",
+    "country": "at",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Reveal Multigaming",
+    "team_logo": "https://owcdn.net/img/63cdc0cd727b8.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "viper",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "31305",
+    "name": "Lar0k",
+    "real_name": "Yusuf Kaan Kanber",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/697974e4d16d5.png",
+    "team": "BBL Esports",
+    "team_logo": "https://owcdn.net/img/65b8ccef5e273.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "kayo",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4893",
+    "name": "lauress",
+    "real_name": "Toprak Kaynak",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/669b667490fd8.png",
+    "team": "Anatolia Esports",
+    "team_logo": "https://owcdn.net/img/6036a2ccd4d98.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "killjoy",
+      "cypher",
+      "sage"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "1380",
+    "name": "Leo",
+    "real_name": "Leo Jannesson",
+    "country": "se",
+    "avatar": "https://owcdn.net/img/65d5cb904fc7c.png",
+    "team": "bonk",
+    "team_logo": "https://owcdn.net/img/5f0326f00108c.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "sage",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "3626",
+    "name": "Lightningfast",
+    "real_name": "Abhirup Choudhury",
+    "country": "in",
+    "avatar": "https://owcdn.net/img/65e1abe992df2.png",
+    "team": "Gods Reign",
+    "team_logo": "https://owcdn.net/img/69b5505c510e8.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "10338",
+    "name": "Lime",
+    "real_name": "Jacob Foster",
+    "country": "gb",
+    "avatar": "https://owcdn.net/img/6798ea37377d0.png",
+    "team": "Enterprise Esports",
+    "team_logo": "https://owcdn.net/img/68643d0b1c72b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "jett",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "24071",
+    "name": "LizA",
+    "real_name": "Elizabeth Luybovina",
+    "country": "un",
+    "avatar": "https://owcdn.net/img/68333e4ebc178.png",
+    "team": "SK Nebula",
+    "team_logo": "https://owcdn.net/img/659ecda9c6382.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "killjoy",
+      "sova",
+      "fade"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "19677",
+    "name": "lucas",
+    "real_name": "Yunkun Lu (路昀昆)",
+    "country": "cn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Titan Esports Club",
+    "team_logo": "https://owcdn.net/img/65487414b8562.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "skye",
+      "fade"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "28716",
+    "name": "lukxo",
+    "real_name": "Lucca Travaioli",
+    "country": "br",
+    "avatar": "https://owcdn.net/img/69e023fe3a5b8.png",
+    "team": "LOUD",
+    "team_logo": "https://owcdn.net/img/62bbec8dc1b9f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "viper",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "33840",
+    "name": "luky",
+    "real_name": "",
+    "country": "cz",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Ramboot Club",
+    "team_logo": "https://owcdn.net/img/64eb6f1b87567.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "neon",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "37489",
+    "name": "Lysoar",
+    "real_name": "Liang Youhao (梁优好)",
+    "country": "cn",
+    "avatar": "https://owcdn.net/img/677d1df2d375a.png",
+    "team": "Xi Lai Gaming",
+    "team_logo": "https://owcdn.net/img/671742f863b9b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "cypher",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "32717",
+    "name": "maestr0",
+    "real_name": "",
+    "country": "br",
+    "avatar": "https://owcdn.net/img/697c5f18b3cad.png",
+    "team": "TBK Esports",
+    "team_logo": "https://owcdn.net/img/61d39894f3d3a.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "omen",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4462",
+    "name": "MaKo",
+    "real_name": "Kim Myeong-gwan (김명관)",
+    "country": "kr",
+    "avatar": "https://owcdn.net/img/676b9d064081b.png",
+    "team": "Kiwoom DRX",
+    "team_logo": "https://owcdn.net/img/63b17abd77fc0.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "viper",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "10307",
+    "name": "marteen",
+    "real_name": "Martin Pátek",
+    "country": "cz",
+    "avatar": "https://owcdn.net/img/6977651551705.png",
+    "team": "Gentle Mates",
+    "team_logo": "https://owcdn.net/img/6670153fa9120.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "jett",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "21158",
+    "name": "Marti",
+    "real_name": "Martyna Pabian",
+    "country": "pl",
+    "avatar": "https://owcdn.net/img/69794caae4b3a.png",
+    "team": "Gentle Mates GC",
+    "team_logo": "https://owcdn.net/img/6670153fa9120.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "breach",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "17333",
+    "name": "Mary",
+    "real_name": "Maryam Maher",
+    "country": "bh",
+    "avatar": "https://owcdn.net/img/640c2267a84a0.png",
+    "team": "Team MENA",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "sova"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "45580",
+    "name": "Mason143",
+    "real_name": "Mason Carney",
+    "country": "un",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Keiser University",
+    "team_logo": "https://owcdn.net/img/66a2a5f00e8fe.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "sage",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "41128",
+    "name": "Mathi",
+    "real_name": "",
+    "country": "uy",
+    "avatar": "https://owcdn.net/img/69f64b0a1afc0.png",
+    "team": "University War",
+    "team_logo": "https://owcdn.net/img/65df25f7afcad.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "raze",
+      "sova"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "40175",
+    "name": "MayaMeow",
+    "real_name": "",
+    "country": "ie",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "INDIGO",
+    "team_logo": "https://owcdn.net/img/69bdd095018a4.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "fade",
+      "sova",
+      "kayo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "6672",
+    "name": "Meiy",
+    "real_name": "Ibuki Seki",
+    "country": "jp",
+    "avatar": "https://owcdn.net/img/674037871e878.png",
+    "team": "DetonatioN FocusMe",
+    "team_logo": "https://owcdn.net/img/63972e548cdc9.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "59857",
+    "name": "milo",
+    "real_name": "",
+    "country": "fr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "CICADAS Gaming",
+    "team_logo": "https://owcdn.net/img/662898a4036c4.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "yoru",
+      "gekko"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "18350",
+    "name": "MiniBoo",
+    "real_name": "Dominykas Lukaševičius",
+    "country": "lt",
+    "avatar": "https://owcdn.net/img/697356d4e6f01.png",
+    "team": "Team Liquid",
+    "team_logo": "https://owcdn.net/img/640c381f0603f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "neon",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "3127",
+    "name": "MONSTEERR",
+    "real_name": "Ondřej Petrů",
+    "country": "cz",
+    "avatar": "https://owcdn.net/img/687aa980d680d.png",
+    "team": "Eintracht Frankfurt",
+    "team_logo": "https://owcdn.net/img/659d1013d5cf5.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "killjoy",
+      "cypher",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "7458",
+    "name": "moose",
+    "real_name": "Kaleb Jayne",
+    "country": "ca",
+    "avatar": "https://owcdn.net/img/66193fcfde2a8.png",
+    "team": "QoR",
+    "team_logo": "https://owcdn.net/img/63e9a11797f41.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "cypher",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "13571",
+    "name": "musz3kk",
+    "real_name": "Cihan Göçer",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/679eb16c86d0e.png",
+    "team": "Falke Esports",
+    "team_logo": "https://owcdn.net/img/6908c88d9bbdd.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "30186",
+    "name": "Nami",
+    "real_name": "Iman Nagaaoui",
+    "country": "fr",
+    "avatar": "https://owcdn.net/img/69794cf31dc03.png",
+    "team": "Gentle Mates GC",
+    "team_logo": "https://owcdn.net/img/6670153fa9120.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "24203",
+    "name": "Neat",
+    "real_name": "Jakob Phelps",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Greed",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "clove"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "310",
+    "name": "Neex",
+    "real_name": "Sebastian Trela",
+    "country": "pl",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Ungentium",
+    "team_logo": "https://owcdn.net/img/61ddd3f1e5dad.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "breach"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "132",
+    "name": "neph",
+    "real_name": "Josh Munro",
+    "country": "sx",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "muffin enjoyers one",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "sova"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "10698",
+    "name": "nephh",
+    "real_name": "Marcus Tan",
+    "country": "sg",
+    "avatar": "https://owcdn.net/img/677fdff5be5db.png",
+    "team": "Bilibili Gaming",
+    "team_logo": "https://owcdn.net/img/63f25d72216c1.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "kayo",
+      "breach",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "17343",
+    "name": "ness",
+    "real_name": "Neslişah Demir",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/665c78286a7fc.png",
+    "team": "Twisted Minds Orchid",
+    "team_logo": "https://owcdn.net/img/64cca8a13521a.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "jett",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "7107",
+    "name": "neveR",
+    "real_name": "Vsevolod Suslov",
+    "country": "un",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Bitfix Gaming",
+    "team_logo": "https://owcdn.net/img/642c76a94a808.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "48574",
+    "name": "Nia",
+    "real_name": "",
+    "country": "vn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Fancy United Esports",
+    "team_logo": "https://owcdn.net/img/697f25edef1f7.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "waylay",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4828",
+    "name": "NiSMO",
+    "real_name": "Marc-Andre Tayar",
+    "country": "lb",
+    "avatar": "https://owcdn.net/img/688c62bcd5f73.png",
+    "team": "M80",
+    "team_logo": "https://owcdn.net/img/6945c73504452.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "kayo",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "39021",
+    "name": "Notexxd",
+    "real_name": "Jaden Anderson",
+    "country": "bm",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "QoR",
+    "team_logo": "https://owcdn.net/img/63e9a11797f41.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "viper",
+      "clove"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "3070",
+    "name": "nukkye",
+    "real_name": "Žygimantas Chmieliauskas",
+    "country": "lt",
+    "avatar": "https://owcdn.net/img/646bd0481fdfd.png",
+    "team": "",
+    "team_logo": "",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "sova",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "52965",
+    "name": "oroni",
+    "real_name": "Ömer Açar",
+    "country": "tr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Beşiktaş Esports",
+    "team_logo": "https://owcdn.net/img/623de5ba6273f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "omen",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "13219",
+    "name": "Papi",
+    "real_name": "Federico Evangelista",
+    "country": "ph",
+    "avatar": "https://owcdn.net/img/69a49c3ee884e.png",
+    "team": "NAOS",
+    "team_logo": "https://owcdn.net/img/6547801579095.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "killjoy",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4217",
+    "name": "Peggyyyyy",
+    "real_name": "Carl Kneale",
+    "country": "gb",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "John Howard",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "yoru",
+      "kayo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "52535",
+    "name": "poeth",
+    "real_name": "",
+    "country": "fr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Esprit Shōnen",
+    "team_logo": "https://owcdn.net/img/695c9e032e21a.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "vyse",
+      "cypher",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "36046",
+    "name": "Poseidon",
+    "real_name": "Lucas Zerbinati",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Alliance Guardians",
+    "team_logo": "https://owcdn.net/img/698d499d024ef.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "viper",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "25255",
+    "name": "primmie",
+    "real_name": "Papaphat Sriprapha",
+    "country": "th",
+    "avatar": "https://owcdn.net/img/6944047b31bc9.png",
+    "team": "FULL SENSE",
+    "team_logo": "https://owcdn.net/img/6537a7954d915.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "jett",
+      "deadlock"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "45494",
+    "name": "Proxh",
+    "real_name": "Yusuf Emre Tunc",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/679c760fde2dd.png",
+    "team": "Enterprise Esports",
+    "team_logo": "https://owcdn.net/img/68643d0b1c72b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "brimstone"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "1885",
+    "name": "purp0",
+    "real_name": "Semyon Borchev",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/6973563baf5bc.png",
+    "team": "Team Liquid",
+    "team_logo": "https://owcdn.net/img/640c381f0603f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "raze",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "50186",
+    "name": "qu1ckz",
+    "real_name": "",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/695d4ae630cd6.png",
+    "team": "trashcan",
+    "team_logo": "https://owcdn.net/img/64a9f0a39281d.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "49565",
+    "name": "QuinT",
+    "real_name": "Đặng Thanh Quin",
+    "country": "vn",
+    "avatar": "https://owcdn.net/img/67fd4158f1721.png",
+    "team": "Da Nang GrandStand",
+    "team_logo": "https://owcdn.net/img/69e5bd1cb4870.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "waylay",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "18215",
+    "name": "rachell",
+    "real_name": "Rachel Kujawa",
+    "country": "fr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Exalty Gaïa",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "cypher",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "54224",
+    "name": "ReZet",
+    "real_name": "",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Meikai Dolls",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "neon",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "42677",
+    "name": "Rimuu",
+    "real_name": "Oguz Yahsi",
+    "country": "de",
+    "avatar": "https://owcdn.net/img/6962875aeea5c.png",
+    "team": "Entropy",
+    "team_logo": "https://owcdn.net/img/621f6d6fb2732.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "fade",
+      "omen",
+      "sova"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "49570",
+    "name": "Rinsat",
+    "real_name": "Rinan Satpute",
+    "country": "in",
+    "avatar": "https://owcdn.net/img/699e715d44ad5.png",
+    "team": "xCrew",
+    "team_logo": "https://owcdn.net/img/69b0e19089981.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "brimstone",
+      "clove"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "18677",
+    "name": "Ruxic",
+    "real_name": "Uğur Güç",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/6792501d68dfb.png",
+    "team": "Natus Vincere",
+    "team_logo": "https://owcdn.net/img/62a4109ddbd7f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "viper",
+      "kayo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "27951",
+    "name": "Rxchyy",
+    "real_name": "",
+    "country": "de",
+    "avatar": "https://owcdn.net/img/689d0688424ef.png",
+    "team": "Ingenious Esports",
+    "team_logo": "https://owcdn.net/img/68aca7a27900a.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "vyse",
+      "yoru",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "63122",
+    "name": "SaintClaws",
+    "real_name": "",
+    "country": "vn",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Puppy Thieves",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "phoenix",
+      "chamber"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "35513",
+    "name": "samed",
+    "real_name": "Samed Topbas",
+    "country": "at",
+    "avatar": "https://owcdn.net/img/69a8be502971c.png",
+    "team": "CGN Esports",
+    "team_logo": "https://owcdn.net/img/60defafec983c.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "60037",
+    "name": "Samyyy",
+    "real_name": "",
+    "country": "de",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Bitfix Puppies",
+    "team_logo": "https://owcdn.net/img/69c157eb95959.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "neon",
+      "waylay"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "33902",
+    "name": "Sayonara",
+    "real_name": "Ștefan Mîtcu",
+    "country": "md",
+    "avatar": "https://owcdn.net/img/6977a7018811e.png",
+    "team": "Team Vitality",
+    "team_logo": "https://owcdn.net/img/6466d79e1ed40.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "skye",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "92",
+    "name": "ScreaM",
+    "real_name": "Adil Benrlitom",
+    "country": "be",
+    "avatar": "https://owcdn.net/img/64249de08c2e0.png",
+    "team": "1TAPS",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "reyna",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "30764",
+    "name": "Serenity",
+    "real_name": "",
+    "country": "at",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Reveal Multigaming",
+    "team_logo": "https://owcdn.net/img/63cdc0cd727b8.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "neon",
+      "waylay"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "384",
+    "name": "Shao",
+    "real_name": "Andrey Kiprsky",
+    "country": "un",
+    "avatar": "https://owcdn.net/img/6792501581f4f.png",
+    "team": "Natus Vincerejoined in November 2022",
+    "team_logo": "https://owcdn.net/img/62a4109ddbd7f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "sage"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "33551",
+    "name": "Slaughter",
+    "real_name": "İrfancan Çakıl",
+    "country": "tr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "FUT Esports Academy",
+    "team_logo": "https://owcdn.net/img/632be9976b8fe.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "brimstone",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "41739",
+    "name": "slowly",
+    "real_name": "Kelun Sun (孙科伦)",
+    "country": "cn",
+    "avatar": "https://owcdn.net/img/6848f4fd4ff85.png",
+    "team": "TYLOO",
+    "team_logo": "https://owcdn.net/img/63eb60fb08390.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "sova",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4742",
+    "name": "Smoggy",
+    "real_name": "Zhang Zhao (张钊)",
+    "country": "cn",
+    "avatar": "https://owcdn.net/img/677fe435edc57.png",
+    "team": "EDward Gaming",
+    "team_logo": "https://owcdn.net/img/62c82049253b2.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "omen",
+      "brimstone"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "60346",
+    "name": "sora",
+    "real_name": "Nikita Vlasov",
+    "country": "by",
+    "avatar": "https://owcdn.net/img/6963abd7c822c.png",
+    "team": "UNIWAY",
+    "team_logo": "https://owcdn.net/img/67806b002f396.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "sova",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "61176",
+    "name": "SOREAL",
+    "real_name": "",
+    "country": "gb",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Habos Babos",
+    "team_logo": "https://owcdn.net/img/69e58a0e2338e.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "waylay",
+      "neon",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "47982",
+    "name": "sorex",
+    "real_name": "",
+    "country": "cl",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "FlyQuest",
+    "team_logo": "https://owcdn.net/img/69cac541ed59b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "cypher",
+      "vyse"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "8422",
+    "name": "Spaz",
+    "real_name": "Adam Laamoumi",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "M80",
+    "team_logo": "https://owcdn.net/img/6945c73504452.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "viper",
+      "astra"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "31574",
+    "name": "srN",
+    "real_name": "Nicolas Niederauer",
+    "country": "br",
+    "avatar": "https://owcdn.net/img/65e0acecea3a6.png",
+    "team": "Evil Geniuses GC",
+    "team_logo": "https://owcdn.net/img/667462f046618.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "jett",
+      "neon"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "21887",
+    "name": "stallion",
+    "real_name": "",
+    "country": "ca",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "YFP",
+    "team_logo": "https://owcdn.net/img/677826ad11d3b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "brimstone"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "40524",
+    "name": "star",
+    "real_name": "Lena Méndez Herrera",
+    "country": "de",
+    "avatar": "https://owcdn.net/img/695fd6f219444.png",
+    "team": "FOKUS Sakura",
+    "team_logo": "https://owcdn.net/img/65bd337798814.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "jett",
+      "yoru"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "11704",
+    "name": "STYRON",
+    "real_name": "Tidus Goh",
+    "country": "sg",
+    "avatar": "https://owcdn.net/img/690485bc72e5e.png",
+    "team": "XLB",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "breach"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "39695",
+    "name": "sunfloweR",
+    "real_name": "",
+    "country": "ua",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Bitfix Gaming",
+    "team_logo": "https://owcdn.net/img/642c76a94a808.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "killjoy",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "33047",
+    "name": "Swifty",
+    "real_name": "",
+    "country": "au",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "MeatZn",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "veto",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "40178",
+    "name": "taraaaaaaaaaaaaa",
+    "real_name": "",
+    "country": "fr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Bitfix Puppies",
+    "team_logo": "https://owcdn.net/img/69c157eb95959.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "raze",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "3552",
+    "name": "tecoNe",
+    "real_name": "Gökay Noğayer",
+    "country": "tr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Team Turkey",
+    "team_logo": "https://owcdn.net/img/5a3815336c150.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "chamber",
+      "reyna"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "46516",
+    "name": "Théa",
+    "real_name": "Théa Michellon",
+    "country": "fr",
+    "avatar": "https://owcdn.net/img/6981c7e8696f7.png",
+    "team": "R2S",
+    "team_logo": "https://owcdn.net/img/69ad475877cce.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "waylay",
+      "chamber",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "37098",
+    "name": "Tiezzi",
+    "real_name": "José Armando Tiezzi",
+    "country": "it",
+    "avatar": "https://owcdn.net/img/697aced9b7d77.png",
+    "team": "ELEVATE",
+    "team_logo": "https://owcdn.net/img/65990c8ab7c2b.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "neon",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "54425",
+    "name": "Tr0mA",
+    "real_name": "",
+    "country": "ma",
+    "avatar": "https://owcdn.net/img/69d33b7349f8f.png",
+    "team": "Gamax Esports",
+    "team_logo": "https://owcdn.net/img/64c0df3369bcd.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "waylay",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "15500",
+    "name": "trent",
+    "real_name": "Trent Cairns",
+    "country": "us",
+    "avatar": "https://owcdn.net/img/65e466071ca19.png",
+    "team": "G2 Esports",
+    "team_logo": "https://owcdn.net/img/633822848a741.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "tejo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "2168",
+    "name": "trexx",
+    "real_name": "Nikita Cherednichenko",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/67ab62d450b3c.png",
+    "team": "Team LiquidJuly 2025 – November 2025",
+    "team_logo": "https://owcdn.net/img/640c381f0603f.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "raze",
+      "sova",
+      "fade"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "51046",
+    "name": "UniqValkyrie",
+    "real_name": "Amy Kropp",
+    "country": "de",
+    "avatar": "https://owcdn.net/img/686da34e71deb.png",
+    "team": "INDIGO",
+    "team_logo": "https://owcdn.net/img/69bdd095018a4.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "astra",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "20064",
+    "name": "Vania",
+    "real_name": "Aleyna Keskin",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/699eaef990527.png",
+    "team": "G2 Gozen",
+    "team_logo": "https://owcdn.net/img/633822848a741.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "brimstone",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "8014",
+    "name": "Vašek",
+    "real_name": "Václav Jan Stezka",
+    "country": "cz",
+    "avatar": "https://owcdn.net/img/643622820597a.png",
+    "team": "Ramboot Club",
+    "team_logo": "https://owcdn.net/img/64eb6f1b87567.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "48657",
+    "name": "Velvette",
+    "real_name": "",
+    "country": "fr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "R2S",
+    "team_logo": "https://owcdn.net/img/69ad475877cce.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "fade",
+      "raze"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "3741",
+    "name": "vo0kashu",
+    "real_name": "Ilya Ushakov",
+    "country": "ru",
+    "avatar": "https://owcdn.net/img/67826114df9ea.png",
+    "team": "Dragon Ranger Gaming",
+    "team_logo": "https://owcdn.net/img/642233fc01f26.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "killjoy",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "62483",
+    "name": "voiceless",
+    "real_name": "",
+    "country": "jp",
+    "avatar": "https://owcdn.net/img/69c3f52be12df.png",
+    "team": "",
+    "team_logo": "",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "yoru",
+      "raze",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "2698",
+    "name": "WISPERIOUS",
+    "real_name": "",
+    "country": "pl",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Hajty",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "raze",
+      "killjoy"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "47866",
+    "name": "wozy",
+    "real_name": "",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Hydra Esports",
+    "team_logo": "https://owcdn.net/img/69eef7e0f0fb2.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "kayo",
+      "iso"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "58995",
+    "name": "xela",
+    "real_name": "",
+    "country": "ca",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "",
+    "team_logo": "",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "omen",
+      "raze",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "50349",
+    "name": "xexxar",
+    "real_name": "",
+    "country": "kz",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "S8UL Esports",
+    "team_logo": "https://owcdn.net/img/67becb3c72954.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "viper",
+      "jett"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "4871",
+    "name": "xffero",
+    "real_name": "David Monangin",
+    "country": "id",
+    "avatar": "https://owcdn.net/img/6821f77c54827.png",
+    "team": "Rex Regum Qeon",
+    "team_logo": "https://owcdn.net/img/629f17f51e7a3.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "astra",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "45358",
+    "name": "yearn",
+    "real_name": "Adhi Rajawat",
+    "country": "in",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Blue Otter",
+    "team_logo": "https://owcdn.net/img/66d47b72469a6.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "viper",
+      "killjoy",
+      "cypher"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "1437",
+    "name": "YESicaN",
+    "real_name": "Đinh Đình Đạt",
+    "country": "vn",
+    "avatar": "https://owcdn.net/img/629f1027a9137.png",
+    "team": "Fancy United Esports",
+    "team_logo": "https://owcdn.net/img/697f25edef1f7.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "breach",
+      "viper",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "8369",
+    "name": "yetujey",
+    "real_name": "Eray Budak",
+    "country": "tr",
+    "avatar": "https://owcdn.net/img/697ab948ca75e.png",
+    "team": "FUT Esports",
+    "team_logo": "https://owcdn.net/img/632be9976b8fe.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "cypher",
+      "killjoy",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "24439",
+    "name": "Yohpa",
+    "real_name": "Baptiste Khoury",
+    "country": "fr",
+    "avatar": "https://owcdn.net/img/695fb3a2739bd.png",
+    "team": "Falke Esports",
+    "team_logo": "https://owcdn.net/img/6908c88d9bbdd.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "fade",
+      "tejo"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "49857",
+    "name": "Zanks",
+    "real_name": "",
+    "country": "us",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "Dynamo",
+    "team_logo": "https://owcdn.net/img/688474d4cebab.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "clove",
+      "neon",
+      "omen"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "56432",
+    "name": "Zayce",
+    "real_name": "",
+    "country": "kr",
+    "avatar": "https://www.vlr.gg/img/base/ph/sil.png",
+    "team": "XLB",
+    "team_logo": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "neon",
+      "clove"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "14048",
+    "name": "zerona",
+    "real_name": "",
+    "country": "us",
+    "avatar": "https://owcdn.net/img/697004f763e77.png",
+    "team": "Evil Geniuses Academy",
+    "team_logo": "https://owcdn.net/img/667462f046618.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "sova",
+      "viper",
+      "skye"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  },
+  {
+    "id": "16953",
+    "name": "ZYND",
+    "real_name": "Christian Lopez",
+    "country": "ph",
+    "avatar": "https://owcdn.net/img/655c244314137.png",
+    "team": "Oasis Gaming",
+    "team_logo": "https://owcdn.net/img/629f15187dd71.png",
+    "region": "",
+    "region_key": "",
+    "agents": [
+      "jett",
+      "cypher",
+      "viper"
+    ],
+    "stats": {
+      "acs": "",
+      "kd": "",
+      "rating": "",
+      "hs_pct": ""
+    },
+    "_snapshot": true
+  }
+]
