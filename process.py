@@ -8,6 +8,8 @@ a new players.json that:
 - Infers `region` from country code (Americas / EMEA / Pacific / CN)
 - Adds `roles` (list of unique Valorant roles) and `primary_role`
 - Adds `has_real_avatar` boolean (False if avatar is the sil.png placeholder)
+- Pulls `past_teams`, `events`, `total_winnings` from cache/players/{id}.json
+  (these fields are scraped by build_players.py but not surfaced by snapshot.py)
 - Drops the `_snapshot` marker
 
 Run after build_players.py or snapshot.py.
@@ -18,6 +20,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -26,8 +29,9 @@ from pathlib import Path
 KB_DIR = Path(__file__).parent
 PLAYERS_PATH = KB_DIR / "players.json"
 BACKUP_PATH = KB_DIR / "players.json.snapshot"
+CACHE_DIR = KB_DIR / "cache" / "players"
 
-VERSION = "v1"
+VERSION = "v2"
 
 
 # ------------------------------------------------------------------
@@ -130,13 +134,86 @@ def is_real_avatar(url: str) -> bool:
 
 
 # ------------------------------------------------------------------
+# Cache file lookup (for past_teams / events / total_winnings)
+# ------------------------------------------------------------------
+
+
+def load_cache(pid: str) -> dict | None:
+    p = CACHE_DIR / f"{pid}.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text())
+    except Exception:
+        return None
+
+
+def parse_winnings_usd(raw: str) -> int:
+    """Parse '$1,234,567' -> 1234567. Returns 0 on failure."""
+    if not raw:
+        return 0
+    m = re.search(r"\$([\d,]+)", raw)
+    if not m:
+        return 0
+    try:
+        return int(m.group(1).replace(",", ""))
+    except ValueError:
+        return 0
+
+
+def extract_past_teams(cache: dict) -> list[dict]:
+    """Slim down cache's past_teams to just the fields the frontend needs."""
+    out: list[dict] = []
+    for t in cache.get("past_teams") or []:
+        name = (t.get("name") or "").strip()
+        if not name:
+            continue
+        out.append({
+            "name": name,
+            "tag": t.get("tag") or "",
+            "dates": t.get("dates") or "",
+            "logo": t.get("logo") or "",
+        })
+    return out
+
+
+def extract_events(cache: dict) -> list[dict]:
+    """Slim down cache's event_placements to the fields useful for guesser questions."""
+    out: list[dict] = []
+    for e in cache.get("event_placements") or []:
+        event = (e.get("event") or "").strip()
+        if not event:
+            continue
+        out.append({
+            "event": event,
+            "placement": e.get("placement") or "",
+            "team": (e.get("team") or "").strip(),
+            "date": e.get("date") or "",
+            "prize": e.get("prize") or "",
+        })
+    return out
+
+
+# ------------------------------------------------------------------
 # Per-record enrichment
 # ------------------------------------------------------------------
 
 
-def enrich(p: dict) -> dict:
+def enrich(p: dict, cache: dict | None) -> dict:
     agents = p.get("agents") or []
     roles = agents_to_roles(agents)
+
+    past_teams: list[dict] = []
+    events: list[dict] = []
+    total_winnings = ""
+    total_winnings_usd = 0
+
+    if cache is not None:
+        past_teams = extract_past_teams(cache)
+        events = extract_events(cache)
+        total_winnings = cache.get("total_winnings") or ""
+        total_winnings_usd = parse_winnings_usd(total_winnings)
+
     out = {
         "id": p.get("id", ""),
         "name": p.get("name", ""),
@@ -151,6 +228,10 @@ def enrich(p: dict) -> dict:
         "roles": roles,
         "primary_role": roles[0] if roles else "",
         "stats": p.get("stats") or {"acs": "", "kd": "", "rating": "", "hs_pct": ""},
+        "past_teams": past_teams,
+        "events": events,
+        "total_winnings": total_winnings,
+        "total_winnings_usd": total_winnings_usd,
     }
     return out
 
@@ -170,7 +251,7 @@ def main() -> None:
 
     shutil.copy2(PLAYERS_PATH, BACKUP_PATH)
 
-    enriched = [enrich(p) for p in records]
+    enriched = [enrich(p, load_cache(p.get("id", ""))) for p in records]
     enriched.sort(key=lambda p: p["name"].lower())
 
     # Coverage report
@@ -178,6 +259,9 @@ def main() -> None:
     region_filled = sum(1 for p in enriched if p["region"])
     role_filled = sum(1 for p in enriched if p["roles"])
     real_avatar = sum(1 for p in enriched if p["has_real_avatar"])
+    with_past = sum(1 for p in enriched if p["past_teams"])
+    with_events = sum(1 for p in enriched if p["events"])
+    with_winnings = sum(1 for p in enriched if p["total_winnings_usd"] > 0)
 
     out = {
         "meta": {
@@ -186,8 +270,9 @@ def main() -> None:
             "count": total,
             "source": (
                 "vlrggapi /v2/stats top 150/region (na/eu/ap/kr/cn) "
-                "+ /v2/player profiles, enriched with country->region "
-                "and agent->role mappings"
+                "+ /v2/player profiles, enriched with country->region, "
+                "agent->role mappings, and past_teams/events/winnings "
+                "from cache/players/{id}.json"
             ),
         },
         "players": enriched,
@@ -196,10 +281,13 @@ def main() -> None:
     PLAYERS_PATH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
 
     print(f"Wrote {total} players to {PLAYERS_PATH}", file=sys.stderr)
-    print(f"  region filled: {region_filled}/{total}", file=sys.stderr)
-    print(f"  roles filled : {role_filled}/{total}", file=sys.stderr)
-    print(f"  real avatar  : {real_avatar}/{total}", file=sys.stderr)
-    print(f"  backup at    : {BACKUP_PATH}", file=sys.stderr)
+    print(f"  region filled : {region_filled}/{total}", file=sys.stderr)
+    print(f"  roles filled  : {role_filled}/{total}", file=sys.stderr)
+    print(f"  real avatar   : {real_avatar}/{total}", file=sys.stderr)
+    print(f"  past_teams    : {with_past}/{total}", file=sys.stderr)
+    print(f"  events        : {with_events}/{total}", file=sys.stderr)
+    print(f"  total_winnings: {with_winnings}/{total}", file=sys.stderr)
+    print(f"  backup at     : {BACKUP_PATH}", file=sys.stderr)
 
 
 if __name__ == "__main__":
