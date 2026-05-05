@@ -1,0 +1,25 @@
+{
+  "_README": "Manual fixes / additions for players.json. Survives every script re-run.",
+  "_USAGE": "Copy this to overrides.json and edit. process.py picks it up automatically.",
+
+  "476": {
+    "_comment": "Example: fix existing player by vlr.gg ID — patch only the wrong fields",
+    "country": "kr",
+    "real_name": "Better Real Name"
+  },
+
+  "custom_retired_001": {
+    "_comment": "Example: add a brand-new player not in vlr.gg stats (use any unique fake id)",
+    "name": "Hiko",
+    "real_name": "Spencer Martin",
+    "country": "us",
+    "team": "100 Thieves (retired)",
+    "agents": ["sage", "killjoy", "cypher"],
+    "past_teams": [
+      {"name": "100 Thieves", "tag": "", "dates": "2020 — 2022", "logo": ""},
+      {"name": "Cloud9 Blue", "tag": "", "dates": "2020", "logo": ""}
+    ],
+    "total_winnings": "$200,000",
+    "total_winnings_usd": 200000
+  }
+}

@@ -30,6 +30,7 @@ KB_DIR = Path(__file__).parent
 PLAYERS_PATH = KB_DIR / "players.json"
 BACKUP_PATH = KB_DIR / "players.json.snapshot"
 CACHE_DIR = KB_DIR / "cache" / "players"
+OVERRIDES_PATH = KB_DIR / "overrides.json"
 
 VERSION = "v2"
 
@@ -134,6 +135,57 @@ def is_real_avatar(url: str) -> bool:
 
 
 # ------------------------------------------------------------------
+# Manual overrides (kbGuess/overrides.json)
+# ------------------------------------------------------------------
+
+
+def load_overrides() -> dict[str, dict]:
+    """Load manual fixes / additions keyed by player id.
+
+    Format: { "<id>": { <any subset of Player fields> }, ... }
+
+    Applied before enrichment so derived fields (region, roles) recompute
+    from overridden inputs (country, agents). Players whose id is not in
+    the existing roster get added as new entries.
+    """
+    if not OVERRIDES_PATH.exists():
+        return {}
+    try:
+        raw = json.loads(OVERRIDES_PATH.read_text())
+        if isinstance(raw, dict):
+            return {str(k): v for k, v in raw.items() if isinstance(v, dict)}
+    except Exception as exc:
+        print(f"  ! overrides.json parse failed: {exc}", file=sys.stderr)
+    return {}
+
+
+def apply_overrides(records: list[dict], overrides: dict[str, dict]) -> int:
+    """Mutate `records` in place: merge overrides into matching ids,
+    append new records for unknown ids. Returns count of touched records."""
+    if not overrides:
+        return 0
+
+    by_id: dict[str, dict] = {}
+    for r in records:
+        rid = r.get("id")
+        if rid:
+            by_id[str(rid)] = r
+
+    touched = 0
+    for pid, fields in overrides.items():
+        if pid in by_id:
+            by_id[pid].update(fields)
+            by_id[pid]["_overridden"] = True
+        else:
+            new_rec = dict(fields)
+            new_rec["id"] = pid
+            new_rec["_overridden"] = True
+            records.append(new_rec)
+        touched += 1
+    return touched
+
+
+# ------------------------------------------------------------------
 # Cache file lookup (for past_teams / events / total_winnings)
 # ------------------------------------------------------------------
 
@@ -228,11 +280,13 @@ def enrich(p: dict, cache: dict | None) -> dict:
         "roles": roles,
         "primary_role": roles[0] if roles else "",
         "stats": p.get("stats") or {"acs": "", "kd": "", "rating": "", "hs_pct": ""},
-        "past_teams": past_teams,
-        "events": events,
-        "total_winnings": total_winnings,
-        "total_winnings_usd": total_winnings_usd,
+        "past_teams": p.get("past_teams") if p.get("past_teams") is not None else past_teams,
+        "events": p.get("events") if p.get("events") is not None else events,
+        "total_winnings": p.get("total_winnings") if p.get("total_winnings") is not None else total_winnings,
+        "total_winnings_usd": p.get("total_winnings_usd") if p.get("total_winnings_usd") is not None else total_winnings_usd,
     }
+    if p.get("_overridden"):
+        out["_overridden"] = True
     return out
 
 
@@ -250,6 +304,9 @@ def main() -> None:
         records = raw
 
     shutil.copy2(PLAYERS_PATH, BACKUP_PATH)
+
+    overrides = load_overrides()
+    overridden_count = apply_overrides(records, overrides)
 
     enriched = [enrich(p, load_cache(p.get("id", ""))) for p in records]
     enriched.sort(key=lambda p: p["name"].lower())
@@ -287,6 +344,7 @@ def main() -> None:
     print(f"  past_teams    : {with_past}/{total}", file=sys.stderr)
     print(f"  events        : {with_events}/{total}", file=sys.stderr)
     print(f"  total_winnings: {with_winnings}/{total}", file=sys.stderr)
+    print(f"  overrides     : {overridden_count} applied", file=sys.stderr)
     print(f"  backup at     : {BACKUP_PATH}", file=sys.stderr)
 
 
