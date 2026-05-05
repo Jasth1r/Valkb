@@ -159,6 +159,80 @@ def load_overrides() -> dict[str, dict]:
     return {}
 
 
+_RESET_FROM_CACHE_FIELDS = (
+    "name", "real_name", "country", "avatar", "team", "team_logo", "agents",
+)
+
+
+def reset_stale_overrides(records: list[dict], current_overrides: dict[str, dict]) -> int:
+    """
+    Make process.py idempotent w.r.t. overrides.
+
+    Records carry _overridden:true if a previous run baked override values into
+    them. When overrides.json shrinks or is deleted, those values would persist
+    forever without a reset. This function:
+      - Drops stale custom records (overridden, no cache, not in current overrides)
+      - Rebuilds cache-derived fields from cache for any _overridden record that
+        still has cache (the override will be re-applied below if still present)
+      - Clears the _overridden flag (apply_overrides re-stamps when applicable)
+    """
+    kept: list[dict] = []
+    dropped = 0
+    for r in records:
+        if not r.get("_overridden"):
+            kept.append(r)
+            continue
+
+        pid = str(r.get("id", ""))
+        cache = load_cache(pid)
+        if cache is None and pid not in current_overrides:
+            # custom fake id from a previous override that's gone — drop
+            dropped += 1
+            continue
+
+        if cache is not None:
+            current_team = cache.get("current_team") or {}
+            r["name"] = cache.get("name", "")
+            r["real_name"] = cache.get("real_name", "")
+            r["country"] = cache.get("country", "")
+            r["avatar"] = cache.get("avatar", "")
+            r["team"] = current_team.get("name", "")
+            r["team_logo"] = current_team.get("logo", "")
+            cache_agents = top_agents_from_cache(cache)
+            if cache_agents:
+                r["agents"] = cache_agents
+
+        r.pop("_overridden", None)
+        kept.append(r)
+
+    records[:] = kept
+    return dropped
+
+
+def top_agents_from_cache(cache: dict, n: int = 3) -> list[str]:
+    """Top-N agents by usage from a cache file's agent_stats."""
+    seen: list[str] = []
+
+    def _key(a: dict) -> tuple[float, int]:
+        try:
+            pct = float((a.get("usage_pct") or "0").rstrip("%"))
+        except ValueError:
+            pct = 0.0
+        try:
+            cnt = int((a.get("usage_count") or "0").replace(",", ""))
+        except ValueError:
+            cnt = 0
+        return pct, cnt
+
+    for a in sorted(cache.get("agent_stats") or [], key=_key, reverse=True):
+        name = a.get("agent")
+        if name and name not in seen:
+            seen.append(name)
+        if len(seen) >= n:
+            break
+    return seen
+
+
 def apply_overrides(records: list[dict], overrides: dict[str, dict]) -> int:
     """Mutate `records` in place: merge overrides into matching ids,
     append new records for unknown ids. Returns count of touched records."""
@@ -306,6 +380,7 @@ def main() -> None:
     shutil.copy2(PLAYERS_PATH, BACKUP_PATH)
 
     overrides = load_overrides()
+    dropped_stale = reset_stale_overrides(records, overrides)
     overridden_count = apply_overrides(records, overrides)
 
     enriched = [enrich(p, load_cache(p.get("id", ""))) for p in records]
@@ -344,7 +419,7 @@ def main() -> None:
     print(f"  past_teams    : {with_past}/{total}", file=sys.stderr)
     print(f"  events        : {with_events}/{total}", file=sys.stderr)
     print(f"  total_winnings: {with_winnings}/{total}", file=sys.stderr)
-    print(f"  overrides     : {overridden_count} applied", file=sys.stderr)
+    print(f"  overrides     : {overridden_count} applied, {dropped_stale} stale dropped", file=sys.stderr)
     print(f"  backup at     : {BACKUP_PATH}", file=sys.stderr)
 
 
