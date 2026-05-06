@@ -5,7 +5,7 @@ export type Answer = "yes" | "no" | "unsure"
 export type Question = {
   id: string
   text: string
-  category: "region" | "role" | "country" | "agent" | "team" | "event" | "winnings"
+  category: "region" | "role" | "country" | "agent" | "team" | "event" | "winnings" | "rating"
   /** Predicate over a player. "unsure" means our data is missing the field
    *  and we cannot confidently say yes or no. */
   predicate: (p: Player) => Answer
@@ -64,6 +64,8 @@ const COUNTRIES: Array<[string, string]> = [
   ["vn", "Vietnam"],
   ["cn", "China"],
   ["br", "Brazil"],
+  ["ca", "Canada"],
+  ["ar", "Argentina"],
   ["gb", "the United Kingdom"],
   ["th", "Thailand"],
   ["ph", "the Philippines"],
@@ -113,16 +115,20 @@ const TEAMS = [
   "Paper Rex",
   "DRX",
   "LOUD",
+  "MIBR",
+  "LEVIATÁN",
   "T1",
   "G2",
   "NAVI",
   "Team Vitality",
   "EDward Gaming",
   "100 Thieves",
+  "NRG",
   "OpTic Gaming",
   "Team Liquid",
   "Karmine Corp",
   "Bilibili Gaming",
+  "XSET",
 ]
 
 const teams: Question[] = TEAMS.map((name) => {
@@ -148,9 +154,9 @@ const teams: Question[] = TEAMS.map((name) => {
 // Events / achievements
 // ---------------------------------------------------------------
 
-// Champions = the year-end VCT tournament. Exclude "Kickoff Champions" etc.
+// Champions = the year-end world championship event, not "Champions Tour".
 const isChampions = (event: string) =>
-  /champions/i.test(event) && !/kickoff|masters/i.test(event)
+  /^(valorant\s+champions|vct\s+champions)\b/i.test(event)
 // Masters = mid-year LAN events, named "Masters <city>"
 const isMasters = (event: string) => /masters/i.test(event)
 
@@ -211,10 +217,33 @@ const winnings: Question[] = [
     predicate: (p) => (p.total_winnings_usd === 0 ? "unsure" : yn(p.total_winnings_usd > 50_000)),
   },
   {
+    id: "winnings_100k",
+    text: "Are the player's career winnings over $100,000?",
+    category: "winnings",
+    predicate: (p) => (p.total_winnings_usd === 0 ? "unsure" : yn(p.total_winnings_usd > 100_000)),
+  },
+  {
     id: "winnings_200k",
     text: "Are the player's career winnings over $200,000?",
     category: "winnings",
     predicate: (p) => (p.total_winnings_usd === 0 ? "unsure" : yn(p.total_winnings_usd > 200_000)),
+  },
+]
+
+// ---------------------------------------------------------------
+// Rating tiers
+// ---------------------------------------------------------------
+
+const rating: Question[] = [
+  {
+    id: "rating_110",
+    text: "Is the player's rating at least 1.10?",
+    category: "rating",
+    predicate: (p) => {
+      const raw = p.stats?.rating
+      const value = raw ? Number(raw) : NaN
+      return Number.isFinite(value) ? yn(value >= 1.1) : "unsure"
+    },
   },
 ]
 
@@ -230,4 +259,5 @@ export const QUESTIONS: Question[] = [
   ...teams,
   ...events,
   ...winnings,
+  ...rating,
 ]

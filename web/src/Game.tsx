@@ -3,7 +3,6 @@ import Avatar from "./Avatar"
 import type { Player } from "./types"
 import { QUESTIONS, type Answer } from "./game/questions"
 import {
-  MAX_QUESTIONS,
   answerQuestion,
   confirmGuess,
   initGame,
@@ -45,11 +44,6 @@ export default function Game({ players, onExit }: Props) {
         >
           ← Back to roster
         </button>
-        <span className="text-sm text-gray-500">
-          Question {Math.min(state.asked.length + (askingPhase ? 1 : 0), MAX_QUESTIONS)} / {MAX_QUESTIONS}
-          {" · "}
-          {state.candidates.length} candidate{state.candidates.length === 1 ? "" : "s"}
-        </span>
       </div>
 
       {askingPhase && state.pendingQuestion && (
@@ -137,6 +131,8 @@ function GuessCard({
   questionsAsked: number
   onConfirm: (correct: boolean) => void
 }) {
+  const rating = guess.stats?.rating?.trim()
+
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
       <p className="text-sm text-gray-500 mb-3">
@@ -158,6 +154,9 @@ function GuessCard({
             {guess.team || "(no current team)"} · {guess.region || "—"} ·{" "}
             {guess.primary_role || "—"}
           </p>
+          {rating && (
+            <p className="text-sm text-gray-500 mt-1">Rating {rating}</p>
+          )}
         </div>
       </div>
       <div className="flex gap-3">

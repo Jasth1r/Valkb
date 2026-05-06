@@ -32,7 +32,7 @@ BACKUP_PATH = KB_DIR / "players.json.snapshot"
 CACHE_DIR = KB_DIR / "cache" / "players"
 OVERRIDES_PATH = KB_DIR / "overrides.json"
 
-VERSION = "v2"
+VERSION = "v3"
 
 
 # ------------------------------------------------------------------

@@ -44,6 +44,7 @@ function PlayerCard({ p }: { p: Player }) {
   const winnings = formatCompactUSD(p.total_winnings_usd)
   const pastTeamNames = p.past_teams.map((t) => t.name).filter(Boolean)
   const pastTeamSummary = pastTeamNames.slice(0, 3).join(", ")
+  const rating = p.stats?.rating?.trim()
 
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
@@ -79,6 +80,9 @@ function PlayerCard({ p }: { p: Player }) {
             label={p.primary_role}
             className={roleStyles[p.primary_role] ?? "bg-gray-100 text-gray-800"}
           />
+        )}
+        {rating && (
+          <Tag label={`Rating ${rating}`} className="bg-sky-100 text-sky-800" />
         )}
       </div>
 
@@ -134,8 +138,20 @@ export default function App() {
       .filter((p) => {
         if (region !== "All" && p.region !== region) return false
         if (role !== "All" && p.primary_role !== role) return false
-        if (q && !p.name.toLowerCase().includes(q) && !p.real_name.toLowerCase().includes(q))
-          return false
+        if (q) {
+          const inName = p.name.toLowerCase().includes(q)
+          const inRealName = p.real_name.toLowerCase().includes(q)
+          const inCurrentTeam = p.team.toLowerCase().includes(q)
+          const inPastTeams = p.past_teams.some((t) => t.name.toLowerCase().includes(q))
+          const inEvents = p.events.some(
+            (e) =>
+              e.event.toLowerCase().includes(q) ||
+              e.team.toLowerCase().includes(q),
+          )
+          if (!inName && !inRealName && !inCurrentTeam && !inPastTeams && !inEvents) {
+            return false
+          }
+        }
         if (pt) {
           const inCurrent = p.team.toLowerCase().includes(pt)
           const inPast = p.past_teams.some((t) => t.name.toLowerCase().includes(pt))

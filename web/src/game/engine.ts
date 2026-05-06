@@ -17,6 +17,15 @@ export type GameState = {
 
 export const MAX_QUESTIONS = 20
 
+function shuffled<T>(items: T[]): T[] {
+  const out = [...items]
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[out[i], out[j]] = [out[j], out[i]]
+  }
+  return out
+}
+
 // ---------------------------------------------------------------
 // Filtering
 // ---------------------------------------------------------------
@@ -73,12 +82,13 @@ function expectedRemainingEntropy(q: Question, candidates: Player[]): number {
 function pickNextQuestion(
   candidates: Player[],
   pool: Question[],
+  askedCount = 0,
 ): Question | null {
   if (candidates.length <= 1) return null
   if (pool.length === 0) return null
 
-  let best: Question | null = null
   let bestScore = Infinity
+  const viable: Array<{ question: Question; score: number }> = []
 
   for (const q of pool) {
     let yes = 0
@@ -92,14 +102,36 @@ function pickNextQuestion(
     // and one other) can't narrow the pool — skip it.
     if (yes === 0 || no === 0) continue
 
-    const score = expectedRemainingEntropy(q, candidates)
-    if (score < bestScore) {
-      bestScore = score
-      best = q
+    let score = expectedRemainingEntropy(q, candidates)
+
+    // Region questions are useful, but opening with them every time gets stale.
+    if (askedCount === 0 && q.category === "region") {
+      score += 0.35
     }
+
+    viable.push({ question: q, score })
+    if (score < bestScore) bestScore = score
   }
 
-  return best
+  if (viable.length === 0) return null
+
+  // Pick from the best few near-ties so runs feel less scripted.
+  const nearBest = viable.filter(({ score }) => score <= bestScore + 0.12)
+  const chosen = nearBest[Math.floor(Math.random() * nearBest.length)] ?? viable[0]
+  return chosen.question
+}
+
+function pickGuessCandidate(candidates: Player[]): Player | null {
+  if (candidates.length === 0) return null
+
+  const sorted = [...candidates].sort((a, b) => {
+    if (a.has_real_avatar !== b.has_real_avatar) {
+      return Number(b.has_real_avatar) - Number(a.has_real_avatar)
+    }
+    return a.name.localeCompare(b.name)
+  })
+
+  return sorted[0] ?? null
 }
 
 // ---------------------------------------------------------------
@@ -108,15 +140,15 @@ function pickNextQuestion(
 
 export function initGame(allPlayers: Player[], allQuestions: Question[]): GameState {
   const candidates = [...allPlayers]
-  const pool = [...allQuestions]
-  const first = pickNextQuestion(candidates, pool)
+  const pool = shuffled(allQuestions)
+  const first = pickNextQuestion(candidates, pool, 0)
   return {
     candidates,
     asked: [],
     remainingQuestions: first ? pool.filter((q) => q.id !== first.id) : pool,
     pendingQuestion: first,
     status: "playing",
-    guess: first ? null : candidates[0] ?? null,
+    guess: first ? null : pickGuessCandidate(candidates),
   }
 }
 
@@ -146,7 +178,7 @@ export function answerQuestion(state: GameState, answer: Answer): GameState {
       asked: newAsked,
       candidates: newCandidates,
       pendingQuestion: null,
-      guess: newCandidates[0],
+      guess: pickGuessCandidate(newCandidates),
     }
   }
   if (newAsked.length >= MAX_QUESTIONS) {
@@ -155,12 +187,12 @@ export function answerQuestion(state: GameState, answer: Answer): GameState {
       asked: newAsked,
       candidates: newCandidates,
       pendingQuestion: null,
-      guess: newCandidates[0],
+      guess: pickGuessCandidate(newCandidates),
     }
   }
 
   // Still playing — queue the next question.
-  const next = pickNextQuestion(newCandidates, state.remainingQuestions)
+  const next = pickNextQuestion(newCandidates, state.remainingQuestions, newAsked.length)
   if (!next) {
     // No question can split the pool further — fall back to a best guess.
     return {
@@ -168,7 +200,7 @@ export function answerQuestion(state: GameState, answer: Answer): GameState {
       asked: newAsked,
       candidates: newCandidates,
       pendingQuestion: null,
-      guess: newCandidates[0],
+      guess: pickGuessCandidate(newCandidates),
     }
   }
 
@@ -182,8 +214,66 @@ export function answerQuestion(state: GameState, answer: Answer): GameState {
 }
 
 export function confirmGuess(state: GameState, correct: boolean): GameState {
+  if (correct) {
+    return {
+      ...state,
+      status: "won",
+    }
+  }
+
+  if (!state.guess) {
+    return {
+      ...state,
+      status: "lost",
+    }
+  }
+
+  const remainingCandidates = state.candidates.filter((p) => p.id !== state.guess?.id)
+
+  if (remainingCandidates.length === 0) {
+    return {
+      ...state,
+      candidates: [],
+      guess: null,
+      pendingQuestion: null,
+      status: "lost",
+    }
+  }
+
+  if (remainingCandidates.length === 1) {
+    return {
+      ...state,
+      candidates: remainingCandidates,
+      guess: pickGuessCandidate(remainingCandidates),
+      pendingQuestion: null,
+      status: "playing",
+    }
+  }
+
+  if (state.asked.length >= MAX_QUESTIONS) {
+    return {
+      ...state,
+      candidates: remainingCandidates,
+      guess: pickGuessCandidate(remainingCandidates),
+      pendingQuestion: null,
+      status: "playing",
+    }
+  }
+
+  const next = pickNextQuestion(
+    remainingCandidates,
+    state.remainingQuestions,
+    state.asked.length,
+  )
+
   return {
     ...state,
-    status: correct ? "won" : "lost",
+    candidates: remainingCandidates,
+    guess: next ? null : pickGuessCandidate(remainingCandidates),
+    pendingQuestion: next,
+    remainingQuestions: next
+      ? state.remainingQuestions.filter((q) => q.id !== next.id)
+      : state.remainingQuestions,
+    status: "playing",
   }
 }
