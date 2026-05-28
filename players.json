@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v3",
-    "generated_at": "2026-05-06T00:05:21+00:00",
+    "generated_at": "2026-05-28T04:18:55+00:00",
     "count": 678,
     "source": "vlrggapi /v2/stats top 150/region (na/eu/ap/kr/cn) + /v2/player profiles, enriched with country->region, agent->role mappings, and past_teams/events/winnings from cache/players/{id}.json"
   },

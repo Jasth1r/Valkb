@@ -22,15 +22,19 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 KB_DIR = Path(__file__).parent
 PLAYERS_PATH = KB_DIR / "players.json"
 BACKUP_PATH = KB_DIR / "players.json.snapshot"
 CACHE_DIR = KB_DIR / "cache" / "players"
 OVERRIDES_PATH = KB_DIR / "overrides.json"
+WEB_SRC_PLAYERS_PATH = KB_DIR / "web" / "src" / "players.json"
+WEB_AVATAR_DIR = KB_DIR / "web" / "public" / "avatars"
 
 VERSION = "v3"
 
@@ -364,6 +368,80 @@ def enrich(p: dict, cache: dict | None) -> dict:
     return out
 
 
+def avatar_extension(url: str) -> str:
+    path = urlparse(url).path
+    ext = Path(path).suffix.lower()
+    if ext in {".png", ".jpg", ".jpeg", ".webp"}:
+        return ext
+    return ".png"
+
+
+def local_avatar_relpath(player: dict) -> str | None:
+    if not player.get("has_real_avatar") or not player.get("avatar"):
+        return None
+    return f"/avatars/{player['id']}{avatar_extension(player['avatar'])}"
+
+
+def sync_local_avatars(players: list[dict]) -> tuple[int, int]:
+    WEB_AVATAR_DIR.mkdir(parents=True, exist_ok=True)
+    downloaded = 0
+    reused = 0
+
+    for player in players:
+        rel = local_avatar_relpath(player)
+        if not rel:
+            continue
+
+        local_path = KB_DIR / "web" / "public" / rel.lstrip("/")
+        if local_path.exists() and local_path.stat().st_size > 0:
+            reused += 1
+            continue
+
+        try:
+            local_path.parent.mkdir(parents=True, exist_ok=True)
+            subprocess.run(
+                [
+                    "curl",
+                    "-L",
+                    "--fail",
+                    "--silent",
+                    "--show-error",
+                    player["avatar"],
+                    "-o",
+                    str(local_path),
+                ],
+                check=True,
+                timeout=30,
+            )
+            if local_path.stat().st_size <= 0:
+                local_path.unlink(missing_ok=True)
+                continue
+            downloaded += 1
+        except Exception:
+            local_path.unlink(missing_ok=True)
+            # Keep remote avatar fallback in the web payload if download fails.
+            continue
+
+    return downloaded, reused
+
+
+def build_web_payload(out: dict) -> dict:
+    players = []
+    for player in out["players"]:
+        cloned = dict(player)
+        rel = local_avatar_relpath(player)
+        if rel:
+            local_path = KB_DIR / "web" / "public" / rel.lstrip("/")
+            if local_path.exists() and local_path.stat().st_size > 0:
+                cloned["avatar"] = rel
+        players.append(cloned)
+
+    return {
+        "meta": dict(out["meta"]),
+        "players": players,
+    }
+
+
 def main() -> None:
     if not PLAYERS_PATH.exists():
         print(f"No players.json at {PLAYERS_PATH}", file=sys.stderr)
@@ -411,11 +489,16 @@ def main() -> None:
     }
 
     PLAYERS_PATH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
+    downloaded, reused = sync_local_avatars(enriched)
+    web_out = build_web_payload(out)
+    WEB_SRC_PLAYERS_PATH.write_text(json.dumps(web_out, indent=2, ensure_ascii=False) + "\n")
 
     print(f"Wrote {total} players to {PLAYERS_PATH}", file=sys.stderr)
+    print(f"Wrote web payload to {WEB_SRC_PLAYERS_PATH}", file=sys.stderr)
     print(f"  region filled : {region_filled}/{total}", file=sys.stderr)
     print(f"  roles filled  : {role_filled}/{total}", file=sys.stderr)
     print(f"  real avatar   : {real_avatar}/{total}", file=sys.stderr)
+    print(f"  avatars local : {downloaded} downloaded, {reused} reused", file=sys.stderr)
     print(f"  past_teams    : {with_past}/{total}", file=sys.stderr)
     print(f"  events        : {with_events}/{total}", file=sys.stderr)
     print(f"  total_winnings: {with_winnings}/{total}", file=sys.stderr)

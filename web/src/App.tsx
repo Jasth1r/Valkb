@@ -1,28 +1,29 @@
 import { useMemo, useState } from "react"
-import rawData from "../../players.json"
+import rawData from "./players.json"
 import Avatar from "./Avatar"
 import Game from "./Game"
+import Landing from "./Landing"
 import type { Player, PlayersFile, Region, Role } from "./types"
 
 const data = rawData as PlayersFile
 
-type Mode = "roster" | "game"
+type Mode = "landing" | "roster" | "game"
 
 const REGIONS: (Region | "All")[] = ["All", "Americas", "EMEA", "Pacific", "CN"]
 const ROLES: (Role | "All")[] = ["All", "Duelist", "Controller", "Sentinel", "Initiator"]
 
 const regionStyles: Record<string, string> = {
-  Americas: "bg-blue-100 text-blue-800",
-  EMEA: "bg-amber-100 text-amber-800",
-  Pacific: "bg-green-100 text-green-800",
-  CN: "bg-rose-100 text-rose-800",
+  Americas: "bg-blue-950/60 text-blue-300 ring-1 ring-inset ring-blue-900/60",
+  EMEA: "bg-amber-950/60 text-amber-300 ring-1 ring-inset ring-amber-900/60",
+  Pacific: "bg-emerald-950/60 text-emerald-300 ring-1 ring-inset ring-emerald-900/60",
+  CN: "bg-red-950/60 text-red-300 ring-1 ring-inset ring-red-900/60",
 }
 
 const roleStyles: Record<string, string> = {
-  Duelist: "bg-red-100 text-red-800",
-  Controller: "bg-purple-100 text-purple-800",
-  Sentinel: "bg-emerald-100 text-emerald-800",
-  Initiator: "bg-yellow-100 text-yellow-800",
+  Duelist: "bg-rose-950/60 text-rose-300 ring-1 ring-inset ring-rose-900/60",
+  Controller: "bg-violet-950/60 text-violet-300 ring-1 ring-inset ring-violet-900/60",
+  Sentinel: "bg-teal-950/60 text-teal-300 ring-1 ring-inset ring-teal-900/60",
+  Initiator: "bg-yellow-950/60 text-yellow-300 ring-1 ring-inset ring-yellow-900/60",
 }
 
 function Tag({ label, className }: { label: string; className: string }) {
@@ -47,42 +48,45 @@ function PlayerCard({ p }: { p: Player }) {
   const rating = p.stats?.rating?.trim()
 
   return (
-    <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+    <div className="group rounded-lg border border-zinc-800 bg-zinc-900/70 p-4 transition-all hover:border-red-500/50 hover:bg-zinc-900 hover:shadow-[0_0_24px_rgba(239,68,68,0.15)]">
       <div className="flex items-start gap-3">
         <Avatar
           src={p.avatar}
           name={p.name}
           hasReal={p.has_real_avatar}
-          className="h-14 w-14 rounded-full shrink-0"
+          className="h-14 w-14 rounded-full shrink-0 ring-1 ring-zinc-800 group-hover:ring-red-500/40 transition"
         />
         <div className="flex-1 min-w-0">
           <div className="flex items-baseline gap-2">
-            <h3 className="font-semibold text-gray-900 truncate">{p.name}</h3>
+            <h3 className="font-semibold text-white truncate">{p.name}</h3>
             {p.country && (
-              <span className="text-xs text-gray-500 uppercase">{p.country}</span>
+              <span className="text-xs text-zinc-500 uppercase">{p.country}</span>
             )}
           </div>
           {p.real_name && (
-            <p className="text-sm text-gray-500 truncate">{p.real_name}</p>
+            <p className="text-sm text-zinc-400 truncate">{p.real_name}</p>
           )}
-          <p className="text-sm text-gray-700 truncate mt-1">
-            {p.team || <span className="italic text-gray-400">no team</span>}
+          <p className="text-sm text-zinc-200 truncate mt-1">
+            {p.team || <span className="italic text-zinc-600">no team</span>}
           </p>
         </div>
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
         {p.region && (
-          <Tag label={p.region} className={regionStyles[p.region] ?? "bg-gray-100 text-gray-800"} />
+          <Tag label={p.region} className={regionStyles[p.region] ?? "bg-zinc-800 text-zinc-300"} />
         )}
         {p.primary_role && (
           <Tag
             label={p.primary_role}
-            className={roleStyles[p.primary_role] ?? "bg-gray-100 text-gray-800"}
+            className={roleStyles[p.primary_role] ?? "bg-zinc-800 text-zinc-300"}
           />
         )}
         {rating && (
-          <Tag label={`Rating ${rating}`} className="bg-sky-100 text-sky-800" />
+          <Tag
+            label={`Rating ${rating}`}
+            className="bg-sky-950/60 text-sky-300 ring-1 ring-inset ring-sky-900/60"
+          />
         )}
       </div>
 
@@ -90,7 +94,7 @@ function PlayerCard({ p }: { p: Player }) {
         {p.agents.map((a) => (
           <span
             key={a}
-            className="text-xs text-gray-600 bg-gray-100 rounded px-1.5 py-0.5"
+            className="text-xs text-zinc-400 bg-zinc-800/70 ring-1 ring-inset ring-zinc-700/50 rounded px-1.5 py-0.5"
           >
             {a}
           </span>
@@ -98,7 +102,7 @@ function PlayerCard({ p }: { p: Player }) {
       </div>
 
       {(winnings || pastTeamNames.length > 0 || p.events.length > 0) && (
-        <div className="mt-3 pt-3 border-t border-gray-100 text-xs text-gray-600 space-y-1">
+        <div className="mt-3 pt-3 border-t border-zinc-800 text-xs text-zinc-400 space-y-1">
           <div className="flex flex-wrap gap-x-3 gap-y-1">
             {winnings && <span title="Total career winnings">💰 {winnings}</span>}
             {p.events.length > 0 && (
@@ -111,7 +115,7 @@ function PlayerCard({ p }: { p: Player }) {
             )}
           </div>
           {pastTeamSummary && (
-            <p className="text-gray-500 truncate" title={pastTeamNames.join(" → ")}>
+            <p className="text-zinc-500 truncate" title={pastTeamNames.join(" → ")}>
               ex: {pastTeamSummary}
               {pastTeamNames.length > 3 && " …"}
             </p>
@@ -123,7 +127,7 @@ function PlayerCard({ p }: { p: Player }) {
 }
 
 export default function App() {
-  const [mode, setMode] = useState<Mode>("roster")
+  const [mode, setMode] = useState<Mode>("landing")
   const [region, setRegion] = useState<(typeof REGIONS)[number]>("All")
   const [role, setRole] = useState<(typeof ROLES)[number]>("All")
   const [search, setSearch] = useState("")
@@ -168,13 +172,31 @@ export default function App() {
       })
   }, [region, role, search, pastTeam])
 
+  if (mode === "landing") {
+    return (
+      <Landing
+        count={data.meta.count}
+        version={data.meta.version}
+        generatedAt={data.meta.generated_at}
+        onEnterRoster={() => setMode("roster")}
+        onStartGame={() => setMode("game")}
+      />
+    )
+  }
+
   if (mode === "game") {
     return (
-      <div className="min-h-screen bg-gray-50 text-gray-900">
-        <header className="border-b border-gray-200 bg-white">
+      <div className="min-h-screen bg-black text-zinc-100">
+        <header className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur sticky top-0 z-20">
           <div className="mx-auto max-w-3xl px-6 py-6">
-            <h1 className="text-2xl font-bold">VCT Player Guesser — Game</h1>
-            <p className="text-sm text-gray-500 mt-1">
+            <button
+              onClick={() => setMode("landing")}
+              className="text-xs text-zinc-500 hover:text-red-400 transition-colors mb-1 font-medium tracking-wide"
+            >
+              ← Valkb
+            </button>
+            <h1 className="text-2xl font-bold text-white">VCT Player Guesser — Game</h1>
+            <p className="text-sm text-zinc-500 mt-1">
               Think of a VCT pro. Answer 20 questions and I'll try to guess.
             </p>
           </div>
@@ -185,19 +207,25 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
-      <header className="border-b border-gray-200 bg-white">
+    <div className="min-h-screen bg-black text-zinc-100">
+      <header className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur sticky top-0 z-20">
         <div className="mx-auto max-w-6xl px-6 py-6 flex items-start justify-between gap-6">
           <div>
-            <h1 className="text-2xl font-bold">VCT Player Guesser — Roster</h1>
-            <p className="text-sm text-gray-500 mt-1">
+            <button
+              onClick={() => setMode("landing")}
+              className="text-xs text-zinc-500 hover:text-red-400 transition-colors mb-1 font-medium tracking-wide"
+            >
+              ← Valkb
+            </button>
+            <h1 className="text-2xl font-bold text-white">VCT Player Guesser — Roster</h1>
+            <p className="text-sm text-zinc-500 mt-1">
               {data.meta.count} players · {data.meta.version} ·
               generated {new Date(data.meta.generated_at).toLocaleDateString()}
             </p>
           </div>
           <button
             onClick={() => setMode("game")}
-            className="rounded bg-gray-900 text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 shrink-0"
+            className="rounded-md bg-red-600 hover:bg-red-500 transition-colors text-white px-4 py-2 text-sm font-semibold shadow-lg shadow-red-900/40 shrink-0"
           >
             ▶ Start guessing game
           </button>
@@ -211,7 +239,7 @@ export default function App() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search name…"
-            className="rounded border border-gray-300 px-3 py-1.5 text-sm w-48 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="rounded border border-zinc-800 bg-zinc-900 text-zinc-100 placeholder-zinc-500 px-3 py-1.5 text-sm w-48 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500"
           />
 
           <input
@@ -219,7 +247,7 @@ export default function App() {
             value={pastTeam}
             onChange={(e) => setPastTeam(e.target.value)}
             placeholder="Team contains… (current or past, e.g. FNATIC)"
-            className="rounded border border-gray-300 px-3 py-1.5 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="rounded border border-zinc-800 bg-zinc-900 text-zinc-100 placeholder-zinc-500 px-3 py-1.5 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500"
           />
 
           <div className="flex gap-1">
@@ -227,10 +255,10 @@ export default function App() {
               <button
                 key={r}
                 onClick={() => setRegion(r)}
-                className={`px-3 py-1 text-sm rounded border ${
+                className={`px-3 py-1 text-sm rounded border transition-colors ${
                   region === r
-                    ? "bg-gray-900 text-white border-gray-900"
-                    : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
+                    ? "bg-red-600 text-white border-red-600"
+                    : "bg-zinc-900 text-zinc-300 border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700"
                 }`}
               >
                 {r}
@@ -243,10 +271,10 @@ export default function App() {
               <button
                 key={r}
                 onClick={() => setRole(r)}
-                className={`px-3 py-1 text-sm rounded border ${
+                className={`px-3 py-1 text-sm rounded border transition-colors ${
                   role === r
-                    ? "bg-gray-900 text-white border-gray-900"
-                    : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
+                    ? "bg-red-600 text-white border-red-600"
+                    : "bg-zinc-900 text-zinc-300 border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700"
                 }`}
               >
                 {r}
@@ -254,7 +282,7 @@ export default function App() {
             ))}
           </div>
 
-          <span className="text-sm text-gray-500 ml-auto">
+          <span className="text-sm text-zinc-500 ml-auto">
             showing {filtered.length} / {data.players.length}
           </span>
         </div>
@@ -266,7 +294,7 @@ export default function App() {
         </div>
 
         {filtered.length === 0 && (
-          <p className="text-center text-gray-400 mt-12">No players match these filters.</p>
+          <p className="text-center text-zinc-600 mt-12">No players match these filters.</p>
         )}
       </div>
     </div>
