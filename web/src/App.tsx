@@ -48,7 +48,7 @@ function PlayerCard({ p }: { p: Player }) {
   const rating = p.stats?.rating?.trim()
 
   return (
-    <div className="group rounded-lg border border-zinc-800 bg-zinc-900/70 p-4 transition-all hover:border-red-500/50 hover:bg-zinc-900 hover:shadow-[0_0_24px_rgba(239,68,68,0.15)]">
+    <div className="group rounded-lg border border-zinc-800 bg-zinc-900/70 p-4 transition-all duration-200 ease-out hover:scale-[1.02] hover:border-red-500/70 hover:bg-gradient-to-br hover:from-zinc-900 hover:to-red-950/40 hover:shadow-[0_0_32px_rgba(239,68,68,0.22)]">
       <div className="flex items-start gap-3">
         <Avatar
           src={p.avatar}

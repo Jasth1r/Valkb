@@ -32,6 +32,15 @@ export default function WarpBackground() {
     let cy = 0
     let stars: Star[] = []
 
+    // ★ 鼠标推力参数 ★
+    //   MOUSE_R   = 影响半径（像素）。光标周围多大的范围内星星会被推开
+    //   MOUSE_STR = 推力强度。每帧加到星星位置上的最大偏移量（像素）
+    //   两个数都越大效果越夸张。MOUSE_R = 0 就完全关闭
+    const MOUSE_R = 160
+    const MOUSE_STR = 12
+    let mouseX = -9999
+    let mouseY = -9999
+
     function mkStar(): Star {
       const angle = Math.random() * Math.PI * 2
       // 出生点距中心的像素半径（2~8）。调大 → 中心出现"空洞"；调小 → 起点更集中
@@ -81,7 +90,7 @@ export default function WarpBackground() {
       // 每帧用半透明黑色"擦"一次屏幕。alpha 越小 → 旧轨迹保留越久 → 尾巴越长
       //   0.04 = 极长尾，几乎不消散    0.08 = 当前长尾感
       //   0.18 = 短促划线              0.30+ = 几乎没尾，像点阵
-      ctx.fillStyle = "rgba(0,0,0,0.08)"
+      ctx.fillStyle = "rgba(0,0,0,0.05)"
       ctx.fillRect(0, 0, W, H)
 
       for (const s of stars) {
@@ -95,6 +104,19 @@ export default function WarpBackground() {
         // ★ 全局速度倍率 = 1.5 ★ 想整体更快/更慢只动这一个数（1.0 偏慢、2.5 飞快）
         s.x += s.vx * s.speed * 1.5 * accel
         s.y += s.vy * s.speed * 1.5 * accel
+
+        // 鼠标推力：在 MOUSE_R 范围内，把星星沿"远离鼠标"方向推一下
+        // 推力随距离平方衰减（越近越强），mouseX = -9999 时永远命中不到，等同关闭
+        const dxm = s.x - mouseX
+        const dym = s.y - mouseY
+        const mDist = Math.hypot(dxm, dym)
+        if (mDist < MOUSE_R && mDist > 0.5) {
+          const f = 1 - mDist / MOUSE_R
+          const push = f * f * MOUSE_STR
+          s.x += (dxm / mDist) * push
+          s.y += (dym / mDist) * push
+        }
+
         s.life++
 
         // 刚出生时淡入：8 帧达到全不透明。调大 → 出现更柔；改成 1 → 瞬出
@@ -122,12 +144,30 @@ export default function WarpBackground() {
       animId = requestAnimationFrame(draw)
     }
 
+    function onMouseMove(e: MouseEvent) {
+      if (!canvas) return
+      const rect = canvas.getBoundingClientRect()
+      mouseX = e.clientX - rect.left
+      mouseY = e.clientY - rect.top
+    }
+    function onMouseGone() {
+      // 鼠标离开窗口 / 失焦时，把坐标推到屏幕外，效果归零
+      mouseX = -9999
+      mouseY = -9999
+    }
+
     init()
     draw()
     window.addEventListener("resize", resize)
+    window.addEventListener("mousemove", onMouseMove)
+    window.addEventListener("blur", onMouseGone)
+    document.addEventListener("mouseleave", onMouseGone)
     return () => {
       cancelAnimationFrame(animId)
       window.removeEventListener("resize", resize)
+      window.removeEventListener("mousemove", onMouseMove)
+      window.removeEventListener("blur", onMouseGone)
+      document.removeEventListener("mouseleave", onMouseGone)
     }
   }, [])
 
